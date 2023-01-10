@@ -28,7 +28,7 @@ a {
 }
 
 body {
-    padding-top: 7vh;
+    padding-top: 10vh;
     background-image: url(../img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +94,7 @@ input[type="submit"] {
     border: none;
     height: 40px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 input[type="submit"]:hover {
