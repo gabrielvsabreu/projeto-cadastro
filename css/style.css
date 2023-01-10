@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 200;
+    color: #323232;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+a {
+    color: #003352;
+}
+
+body {
+    padding-top: 10vh;
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+}
+
+#main-container {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+}
+
+.space {
+    margin-right: 3%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+input {
+    border-bottom: 1px solid #CACDBC;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #003352;
+    transition: 0.2s;
+}
+
+input[type="submit"] {
+    background-color: #779097;
+    color: whitesmoke;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #104662;
+    transition: .2s;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+#agreement-label {
+    transform: translateY(-2px);
+}
+
+/* Validações */
+
+.error-validation {
+    color: #104662;
+    position: relative;
+    font-size: .6em;
+    font-weight: bold;
+    top: -35px;
+}
+
+.template {
+    display: none;
+}
